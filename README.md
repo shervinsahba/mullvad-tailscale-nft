@@ -17,7 +17,7 @@ systemctl edit tailscaled
 ```
 ```
 [Service]
-ExecStartPre=nft -f '/opt/mullvad-ts.nft'
+ExecStartPre=nft -f '/opt/mullvad-tailscale.nft'
 ExecStartPre=nft insert rule inet mullvad forward ip daddr 100.64.0.0/10 accept
-ExecStopPost=nft -f '/opt/mullvad-ts-cleanup.nft'
+ExecStopPost=nft -f '/opt/mullvad-tailscale-cleanup.nft'
 ```
