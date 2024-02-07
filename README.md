@@ -12,7 +12,7 @@ The above rules apply independent of the mullvad rules and make almost everythin
 Consolidating into the systemd service:
 
 ```
-$ sudo systemctl edit tailscaled
+systemctl edit tailscaled
 ```
 ```
 [Service]
