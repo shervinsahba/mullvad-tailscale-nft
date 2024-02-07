@@ -5,7 +5,7 @@ Move these files to your directory of choice (/opt was chosen as seen in the fil
 nft -f /opt/mullvad-tailscale.nft
 ```
 
-The authopr, sdht0, comments the following:
+The author, sdht0, comments the following:
 
 The above rules apply independent of the mullvad rules and make almost everything work. However, to be able to connect to the exposed ports from docker, the mullvad rules need to be modified directly: `nft insert rule inet mullvad forward oifname "tailscale0" accept`
 
